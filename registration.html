@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="registration.css"> -->
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <form id="registrationForm">
+            <div>
+                <label for="name">Name</label>
+                <br>
+                <input name="name" type="text" id="name">
+                <span id="errName"></span>
+                <br>
+            </div>
+
+            <div>
+                <label for="age">Age</label>
+                <br>
+                <input name="age" type="text" min="3" max="100" id="age">
+                <span id="errAge"></span>
+                <br>    
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <br>
+                <input name="email" type="email" id="email">
+                <span id="errEmail"></span>
+                <br>    
+            </div>
+
+            <div>
+                <label for="rollno">Roll No</label>
+                <br>
+                <input name="rollNo" type="text" id="rollno">
+                <span id="errRNo"></span>
+                <br>    
+            </div>
+
+            <div>
+                <label for="gender">Gender</label>
+                <br>
+                <label for="male">Male</label>
+                <input name="isMale" type="radio" id="gender" value="true">
+                <label for="female">Female</label>
+                <input name="isMale" type="radio" id="gender" value="false">
+                <br>    
+            </div>
+
+            <div>
+                <label for="date">Date</label>
+                <br>
+                <input name="date" type="date" id="date">
+                <span id="errDate"></span>
+                <br>
+            </div>
+
+            <button id="add">Add</button>
+            <button id="display">Display</button>    
+        </form>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" 
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="registration.js"></script>
+</body>
+</html>
